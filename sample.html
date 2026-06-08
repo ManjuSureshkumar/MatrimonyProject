@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Matrimony</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Wedding Matrimony</h1>
+        </div>
+
+        <div class="right-section">
+
+            <nav class="nav-links">
+                <a href="index.html">About</a>
+                <a href="#" class="menu-item" onclick="toggleFaq()">FAQ</a>
+                <a href="#" onclick="toggleContact()">Contact</a>
+            </nav>
+
+            <div class="profile-icon" onclick="openProfile()">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="1.5"/>
+                    <circle cx="12" cy="8" r="3" fill="white"/>
+                    <path d="M6 19C7.5 16.5 10 15.5 12 15.5C14 15.5 16.5 16.5 18 19"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"/>
+                </svg>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Second Navigation -->
+    <section class="sub-navbar">
+
+        <div class="sub-logo-section">
+            <img src="images/logo.png" alt="Logo" class="sub-logo">
+            <h2>Wedding Matrimony</h2>
+        </div>
+
+        <div class="sub-menu">
+
+<!-- Explore Menu -->
+<div class="menu-item dropdown" onclick="toggleExplore()">
+    <span>Explore</span>
+
+    <svg class="dropdown-arrow" width="18" height="18" viewBox="0 0 24 24">
+        <path d="M6 9L12 15L18 9"
+            fill="none"
+            stroke="#000"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</div>
+
+
+<!-- Explore Popup -->
+<div id="exploreSection" class="explore-popup">
+
+    <div class="explore-header">
+        <h2>Explore Category</h2>
+
+        <button class="close-btn" onclick="toggleExplore()">
+            ✕
+        </button>
+    </div>
+
+    <div class="explore-cards">
+
+        <!-- Card 1 -->
+        <div class="explore-card">
+            <img src="images/explore1.png" alt="">
+            <h3>Browse Profiles</h3>
+            <p>1200+ verified profiles</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="explore-card">
+            <img src="images/explore2.png" alt="">
+            <h3>Wedding Page</h3>
+            <p>Make Reservation</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="explore-card">
+            <img src="images/explore3.png" alt="">
+            <h3>All Services</h3>
+            <p>Catering, Stage Decor Etc..</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="explore-card">
+            <img src="images/explore4.png" alt="">
+            <h3>Join Us</h3>
+            <p>Join Us For More</p>
+            <button>More Details</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="faqPopup" class="faq-popup">
+
+    <button class="faq-close" onclick="toggleFaq()">✕</button>
+
+    <h2 class="faq-title">
+        Frequently asked questions
+    </h2>
+
+    <div class="faq-box">
+
+        <div class="faq-item">
+            <span>How Matrimony Works ?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Printing and typesetting industry?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Why do we use it?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>There are many variations of passages?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Where can I get some?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="contactPopup" class="contact-popup">
+
+    <button class="contact-close" onclick="toggleContact()">✕</button>
+
+    <h2 class="contact-title">
+        CONTACT TO US EASY AND FAST
+    </h2>
+
+    <div class="contact-container">
+
+        <!-- Left Image -->
+       <div class="contact-image">
+
+            <img src="images/contact.png"
+                class="flower-img"
+                alt="Flower">
+
+            <img src="images/contact1.png"
+                class="couple-img-contact"
+                alt="Couple">
+
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Mail-Id</label>
+                <input type="email">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel">
+            </div>
+
+            <div class="form-group message-group">
+                <label>Message</label>
+                <textarea></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+            <a href="plans.html" class="menu-item">Plans</a>
+
+            <a href="gallery.html" class="menu-item">Gallery</a>
+
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+
+            <button class="details-btn" onclick="openRegisterForm()">
+                Register
+            </button>
+
+        </div>
+
+    </section>
+
+
+<div class="dashboard-page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <img src="images/person3.png" class="sidebar-profile">
+
+        <ul class="sidebar-menu">
+
+    <li class="active">
+        <img src="images/dashboard.png" alt="">
+        <span>DashBoard</span>
+    </li>
+
+    <li>
+        <img src="images/profile.png" alt="">
+        <span>Profile</span>
+    </li>
+
+    <li>
+        <img src="images/interest.png" alt="">
+        <span>Interest</span>
+    </li>
+
+    <li>
+        <img src="images/chartlist.png" alt="">
+        <span>Chat List</span>
+    </li>
+
+    <li>
+        <img src="images/calendar.png" alt="">
+        <span>Plan</span>
+    </li>
+
+    <li>
+        <img src="images/logout.png" alt="">
+        <span>Logout</span>
+    </li>
+
+</ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+
+        <h1>USER DASHBOARD</h1>
+
+        <div class="stats">
+
+            <div class="card views">
+                <h3>Profile Views</h3>
+                <span>65</span>
+            </div>
+
+            <div class="card likes">
+                <h3>Likes</h3>
+                <span>45</span>
+            </div>
+
+            <div class="card requests">
+                <h3>Requests</h3>
+                <span>5</span>
+            </div>
+
+            <div class="card chats">
+                <h3>Chats</h3>
+                <span>2</span>
+            </div>
+
+        </div>
+
+        <div class="dashboard-legend">
+
+    <div class="legend-item">
+        <div class="legend-color views-color"></div>
+        <span>Views</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-color likes-color"></div>
+        <span>Likes</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-color requests-color"></div>
+        <span>Requests</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-color chats-color"></div>
+        <span>Chats</span>
+    </div>
+
+</div>
+
+        <div class="chart-box">
+
+            <img src="images/graph.png"
+                alt="Dashboard Graph"
+                class="dashboard-graph">
+
+        </div>
+
+    </main>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Contact -->
+
+        <div class="footer-col">
+            <h3>Get In Touch</h3>
+
+            <div class="contact-info">
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    123 road, Chennai
+                </p>
+
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    9876543210
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    abcmatrimony@gmail.com
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Resources -->
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Guide</a>
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Safety Information</a>
+            <a href="#">Cancellation Options</a>
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-col">
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+                <img src="images/insta.png" alt="">
+                <img src="images/whatsapp.png" alt="">
+                <img src="images/fb.png" alt="">
+            </div>
+        </div>
+
+        <!-- App Download -->
+
+        <div class="footer-col">
+            <h3>Download Our APP</h3>
+
+            <div class="app-buttons">
+                <img src="images/playstore.png" alt="">
+                <img src="images/app.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</div>
+<script>
+    function toggleExplore() {
+    document
+    .getElementById("exploreSection")
+    .classList.toggle("active");
+}
+
+/*FAQ Popup*/
+function toggleFaq() {
+    document
+    .getElementById("faqPopup")
+    .classList.toggle("active");
+}
+
+/*CONTACT Popup*/
+function toggleContact() {
+    document
+    .getElementById("contactPopup")
+    .classList.toggle("active");
+}
+
+function openProfile() {
+    window.location.href = "profile.html";
+}
+
+function openRegisterForm() {
+    window.location.href = "register.html";
+}
+</script>
+</body>
+</html>

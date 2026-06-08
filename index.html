@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Matrimony</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Wedding Matrimony</h1>
+        </div>
+
+        <div class="right-section">
+
+            <nav class="nav-links">
+                <a href="index.html">About</a>
+                <a href="#" class="menu-item" onclick="toggleFaq()">FAQ</a>
+                <a href="#" onclick="toggleContact()">Contact</a>
+            </nav>
+
+            <div class="profile-icon" onclick="openProfile()">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="1.5"/>
+                    <circle cx="12" cy="8" r="3" fill="white"/>
+                    <path d="M6 19C7.5 16.5 10 15.5 12 15.5C14 15.5 16.5 16.5 18 19"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"/>
+                </svg>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Second Navigation -->
+    <section class="sub-navbar">
+
+        <div class="sub-logo-section">
+            <img src="images/logo.png" alt="Logo" class="sub-logo">
+            <h2>Wedding Matrimony</h2>
+        </div>
+
+        <div class="sub-menu">
+
+<!-- Explore Menu -->
+<div class="menu-item dropdown" onclick="toggleExplore()">
+    <span>Explore</span>
+
+    <svg class="dropdown-arrow" width="18" height="18" viewBox="0 0 24 24">
+        <path d="M6 9L12 15L18 9"
+            fill="none"
+            stroke="#000"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</div>
+
+
+<!-- Explore Popup -->
+<div id="exploreSection" class="explore-popup">
+
+    <div class="explore-header">
+        <h2>Explore Category</h2>
+
+        <button class="close-btn" onclick="toggleExplore()">
+            ✕
+        </button>
+    </div>
+
+    <div class="explore-cards">
+
+        <!-- Card 1 -->
+        <div class="explore-card">
+            <img src="images/explore1.png" alt="">
+            <h3>Browse Profiles</h3>
+            <p>1200+ verified profiles</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="explore-card">
+            <img src="images/explore2.png" alt="">
+            <h3>Wedding Page</h3>
+            <p>Make Reservation</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="explore-card">
+            <img src="images/explore3.png" alt="">
+            <h3>All Services</h3>
+            <p>Catering, Stage Decor Etc..</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="explore-card">
+            <img src="images/explore4.png" alt="">
+            <h3>Join Us</h3>
+            <p>Join Us For More</p>
+            <button>More Details</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="faqPopup" class="faq-popup">
+
+    <button class="faq-close" onclick="toggleFaq()">✕</button>
+
+    <h2 class="faq-title">
+        Frequently asked questions
+    </h2>
+
+    <div class="faq-box">
+
+        <div class="faq-item">
+            <span>How Matrimony Works ?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Printing and typesetting industry?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Why do we use it?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>There are many variations of passages?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Where can I get some?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="contactPopup" class="contact-popup">
+
+    <button class="contact-close" onclick="toggleContact()">✕</button>
+
+    <h2 class="contact-title">
+        CONTACT TO US EASY AND FAST
+    </h2>
+
+    <div class="contact-container">
+
+        <!-- Left Image -->
+       <div class="contact-image">
+
+            <img src="images/contact.png"
+                class="flower-img"
+                alt="Flower">
+
+            <img src="images/contact1.png"
+                class="couple-img-contact"
+                alt="Couple">
+
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Mail-Id</label>
+                <input type="email">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel">
+            </div>
+
+            <div class="form-group message-group">
+                <label>Message</label>
+                <textarea></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+            <a href="plans.html" class="menu-item">Plans</a>
+
+            <a href="gallery.html" class="menu-item">Gallery</a>
+
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+
+            <button class="details-btn" onclick="openRegisterForm()">
+                Register
+            </button>
+
+        </div>
+
+    </section>
+
+<section class="hero">
+
+    <!-- Hero Background Image -->
+    <img src="images/hero.png" alt="Wedding Couple" class="hero-bg" >
+
+     
+
+    <div class="hero-content">
+        <p class="hero-small">#1 Matrimony</p>
+
+        <h1 class="hero-title">FIND YOUR</h1>
+
+        <h1 class="hero-title">
+            <span>RIGHT MATCH</span> HERE
+        </h1>
+
+        <p class="hero-desc">
+            Most Trusted Matrimony In The World
+        </p>
+    </div>
+
+    <div class="search-section">
+        <button class="search-btn">Search</button>
+
+        <select>
+            <option>I'm looking for you</option>
+        </select>
+
+        <select>
+            <option>Marital Status</option>
+        </select>
+
+        <select>
+            <option>Select an address</option>
+        </select>
+    </div>
+
+    <img src="images/hero2.png" alt="Couple" class="couple-img">
+
+    </section>
+
+    <section class="plans-section">
+
+    <h2 class="plans-heading">
+        Find Your <span>Special Someone</span>
+    </h2>
+
+    <div class="plans-container">
+
+        <div class="plan-title">
+            GET <br>
+            <span>PLAN</span>
+        </div>
+
+        <!-- Bronze -->
+        <div class="plan-card bronze">
+            <div class="plan-content">
+                <h3>BRONZE</h3>
+                <p>100 Profile View</p>
+            </div>
+
+            <img src="images/rocket.png" alt="Rocket">
+        </div>
+
+        <!-- Silver -->
+        <div class="plan-card silver">
+            <div class="plan-content">
+                <h3>SILVER</h3>
+                <p>500 Profile View</p>
+            </div>
+
+            <img src="images/rocket.png" alt="Rocket">
+        </div>
+
+        <!-- Gold -->
+        <div class="plan-card gold">
+            <div class="plan-content">
+                <h3>GOLD</h3>
+                <p>1000 Profile View</p>
+            </div>
+
+            <img src="images/rocket.png" alt="Rocket">
+        </div>
+
+    </div>
+
+    </section>
+<section class="why-choose-us">
+
+    <!-- Background Image -->
+    <img src="images/why-bg.png" class="why-bg" alt="Background">
+
+    <!-- Green Overlay -->
+    <div class="why-overlay"></div>
+
+    <!-- Mr & Mrs Logo -->
+    <img src="images/mr-mrs.png" class="mrmrs" alt="Logo">
+
+    <!-- Heading -->
+    <div class="heading-content">
+        <h2>WHY YOU <span>CHOOSE US ?</span></h2>
+        <p>Most Trusted And Premium Matrimony</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="feature-cards">
+
+        <div class="feature-card">
+            <img src="images/badge.png" alt="">
+            <h3>Genuine Profiles</h3>
+            <p>
+                Contact Genuine Profiles
+                With 100% Verified
+                Mobile
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <img src="images/handshake.png" alt="">
+            <h3>Most Trusted</h3>
+            <p>
+                Contact Genuine Profiles
+                With 100% Verified
+                Mobile
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <img src="images/rings.png" alt="">
+            <h3>1600+ Weddings</h3>
+            <p>
+                Contact Genuine Profiles
+                With 100% Verified
+                Mobile
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="welcome-section">
+
+    <!-- Decorative Circles -->
+    <div class="circle-green"></div>
+    <div class="circle-orange"></div>
+
+    <!-- Left Images -->
+    <div class="welcome-images">
+        <img src="images/wedding.png" class="main-image" alt="">
+        <img src="images/wedding1.png" class="small-image" alt="">
+    </div>
+
+    <!-- Right Content -->
+    <div class="welcome-content">
+
+        <div class="heading-row">
+            <h2>
+                WELCOME TO <br>
+                <span>WEDDING MATRIMONY</span>
+            </h2>
+
+            <img src="images/wedding2.png" class="welcome-logo" alt="">
+        </div>
+
+        <p class="welcome-text">
+            Best wedding matrimony It is a long established fact that a reader
+            will be distracted by the readable content of a page when looking
+            at its layout.
+        </p>
+
+        <p class="welcome-text">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly believable.
+        </p>
+
+        <a href="#" class="click-link">
+            CLICK HERE
+            <span>to start your matrimony service</span>
+        </a>
+
+        <!-- Support -->
+        <div class="contact-row">
+
+            <div class="icon-circle">
+                <img src="images/mail.png" alt="Support">
+            </div>
+
+            <div>
+                <h4>Get Support</h4>
+                <p>bcweddingmatrimony@gmail.com</p>
+            </div>
+
+        </div>
+
+        <!-- Enquiry -->
+        <div class="contact-row">
+
+            <div class="icon-circle">
+                <img src="images/call.png" alt="Phone">
+            </div>
+
+            <div>
+                <h4>Enquiry</h4>
+                <p>9876543210</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="trusted-customers">
+
+    <div class="trusted-header">
+
+        <h2 class="trusted-title">
+            1500+ Trusted Customers
+        </h2>
+
+        <img src="images/wedding3.png"
+             alt="Decoration"
+             class="trusted-badge">
+
+    </div>
+
+    <img src="images/wedding4.png"
+         alt="Trusted Customers"
+         class="trusted-image">
+
+</section>
+
+<section class="reviews-section">
+
+    <div class="reviews-wrapper">
+
+        <div class="reviews-container">
+
+            <div class="review-card">
+                <img src="images/person1.png" alt="Riyan">
+
+                <h3>Riyan</h3>
+
+                <p>
+                    I found my match on jai bharat.com on one month.
+                    Not yet married but going steady with him.
+                    There cheers to here. Fairy tales....
+                    <span>Read more</span>
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="images/person2.png" alt="Rekha">
+
+                <h3>Rekha</h3>
+
+                <p>
+                    I found my match on jai bharat.com on one month.
+                    Not yet married but going steady with him.
+                    There cheers to here. Fairy tales....
+                    <span>Read more</span>
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="images/person1.png" alt="Riyan">
+
+                <h3>Riyan</h3>
+
+                <p>
+                    I found my match on jai bharat.com on one month.
+                    Not yet married but going steady with him.
+                    There cheers to here. Fairy tales....
+                    <span>Read more</span>
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="images/person2.png" alt="Rekha">
+
+                <h3>Rekha</h3>
+
+                <p>
+                    I found my match on jai bharat.com on one month.
+                    Not yet married but going steady with him.
+                    There cheers to here. Fairy tales....
+                    <span>Read more</span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="review-summary">
+
+            <h2>
+                Matrimony<br>
+                Service<br>
+                Customer<br>
+                <span>Reviews</span>
+            </h2>
+
+            <div class="rating">
+                ★ ★ ★ ★ ☆
+                <span>| 4.5/5</span>
+            </div>
+
+            <button class="view-btn">
+                VIEW ALL
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="how-it-works">
+
+    <div class="how-image-box">
+        <img src="images/how.png" alt="How It Works" class="how-image">
+    </div>
+</section>
+
+<section class="how-steps">
+
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+  <div class="timeline">
+
+    <div class="timeline-dot top-dot"></div>
+
+    <div class="timeline-line line1"></div>
+
+    <div class="timeline-dot middle-dot dot1"></div>
+
+    <div class="timeline-line line2"></div>
+
+    <div class="timeline-dot middle-dot dot2"></div>
+
+    <div class="timeline-line line3"></div>
+
+    <div class="timeline-dot bottom-dot"></div>
+
+</div>
+    <div class="steps-grid">
+
+        <div class="step left">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Register</h3>
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/wedding2.png" class="step-icon">
+        </div>
+
+        <div class="step right">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Find your Match</h3>
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/mr-mrs.png" class="step-icon">
+        </div>
+
+        <div class="step left">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Send Interest</h3>
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/wedding5.png" class="step-icon">
+        </div>
+
+        <div class="step right">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Get Profile Info</h3>
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/wedding6.png" class="step-icon">
+        </div>
+
+        <div class="step left">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Start Chat</h3>
+            </div>
+            <p>
+               Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/wedding3.png" class="step-icon">
+        </div>
+
+        <div class="step right">
+            <div class="step-title">
+                <img src="images/pointing.png">
+                <h3>Getting Married</h3>
+            </div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever.
+            </p>
+            <img src="images/wedding7.png" class="step-icon">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="recent-couples-title-section">
+
+    <div class="recent-title-wrapper">
+
+        <div class="recent-text">
+            <h2>RECENT MARRIED COUPLES</h2>
+
+            <img src="images/wedding8.png"
+                 alt="Underline"
+                 class="recent-underline">
+        </div>
+
+        <img src="images/recent.png"
+             alt="Decoration"
+             class="recent-flower">
+
+    </div>
+
+</section>
+
+<section class="recent-gallery">
+
+    <div class="gallery-scroll" id="gallery">
+
+        <img src="images/couple1.png" alt="">
+        <img src="images/couple2.png" alt="">
+        <img src="images/couple3.png" alt="">
+        <img src="images/couple4.png" alt="">
+        <img src="images/couple5.png" alt="">
+        <img src="images/couple6.png" alt="">
+        <img src="images/couple7.jpg" alt="">
+
+    </div>
+
+</section>
+
+<section class="stats-container">
+
+    <div class="stat-item">
+        <img src="images/couple-icon.png" alt="">
+        <p>Total Groom & Bride Biodatas</p>
+        <h2>4450+</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+        <img src="images/groom-icon.png" alt="">
+        <p>Total Groom Biodatas</p>
+        <h2>2325+</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+        <img src="images/bride-icon.png" alt="">
+        <p>Total Bride Biodatas</p>
+        <h2>2125+</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-item">
+        <img src="images/rings.png" alt="">
+        <p>Total Successful Marriages</p>
+        <h2>1500+</h2>
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Contact -->
+
+        <div class="footer-col">
+            <h3>Get In Touch</h3>
+
+            <div class="contact-info">
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    123 road, Chennai
+                </p>
+
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    9876543210
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    abcmatrimony@gmail.com
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Resources -->
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Guide</a>
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Safety Information</a>
+            <a href="#">Cancellation Options</a>
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-col">
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+                <img src="images/insta.png" alt="">
+                <img src="images/whatsapp.png" alt="">
+                <img src="images/fb.png" alt="">
+            </div>
+        </div>
+
+        <!-- App Download -->
+
+        <div class="footer-col">
+            <h3>Download Our APP</h3>
+
+            <div class="app-buttons">
+                <img src="images/playstore.png" alt="">
+                <img src="images/app.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</div>
+    <script>
+    const slider = document.querySelector(".reviews-container");
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+        isDown = false;
+    });
+
+    slider.addEventListener("mouseup", () => {
+        isDown = false;
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+
+        e.preventDefault();
+
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+
+    /*Gallery Scroll*/
+
+    const gallerySlider = document.querySelector("#gallery");
+    gallerySlider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        gallerySlider.classList.add('active');
+
+        startX = e.pageX - gallerySlider.offsetLeft;
+        scrollLeft = gallerySlider.scrollLeft;
+    });
+
+    gallerySlider.addEventListener('mouseleave', () => {
+        isDown = false;
+        gallerySlider.classList.remove('active');
+    });
+
+    gallerySlider.addEventListener('mouseup', () => {
+        isDown = false;
+        gallerySlider.classList.remove('active');
+    });
+
+    gallerySlider.addEventListener('mousemove', (e) => {
+
+        if (!isDown) return;
+
+        e.preventDefault();
+
+        const x = e.pageX - gallerySlider.offsetLeft;
+        const walk = (x - startX) * 2;
+
+        gallerySlider.scrollLeft = scrollLeft - walk;
+    });
+
+    /*Explore Popup*/
+
+    function toggleExplore() {
+        document
+        .getElementById("exploreSection")
+        .classList.toggle("active");
+    }
+
+    /*FAQ Popup*/
+    function toggleFaq() {
+        document
+        .getElementById("faqPopup")
+        .classList.toggle("active");
+    }
+
+    /*CONTACT Popup*/
+    function toggleContact() {
+        document
+        .getElementById("contactPopup")
+        .classList.toggle("active");
+    }
+
+    function openProfile() {
+        window.location.href = "profile.html";
+    }
+
+    function openRegisterForm() {
+        window.location.href = "register.html";
+    }
+    </script>
+    </body>
+    </html>

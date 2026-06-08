@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Matrimony</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Top Navbar -->
+    <header class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Wedding Matrimony</h1>
+        </div>
+
+        <div class="right-section">
+
+            <nav class="nav-links">
+                <a href="index.html">About</a>
+                <a href="#" class="menu-item" onclick="toggleFaq()">FAQ</a>
+                <a href="#" onclick="toggleContact()">Contact</a>
+            </nav>
+
+            <div class="profile-icon" onclick="openProfile()">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" stroke="white" stroke-width="1.5"/>
+                    <circle cx="12" cy="8" r="3" fill="white"/>
+                    <path d="M6 19C7.5 16.5 10 15.5 12 15.5C14 15.5 16.5 16.5 18 19"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"/>
+                </svg>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Second Navigation -->
+    <section class="sub-navbar">
+
+        <div class="sub-logo-section">
+            <img src="images/logo.png" alt="Logo" class="sub-logo">
+            <h2>Wedding Matrimony</h2>
+        </div>
+
+        <div class="sub-menu">
+
+<!-- Explore Menu -->
+<div class="menu-item dropdown" onclick="toggleExplore()">
+    <span>Explore</span>
+
+    <svg class="dropdown-arrow" width="18" height="18" viewBox="0 0 24 24">
+        <path d="M6 9L12 15L18 9"
+            fill="none"
+            stroke="#000"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</div>
+
+
+<!-- Explore Popup -->
+<div id="exploreSection" class="explore-popup">
+
+    <div class="explore-header">
+        <h2>Explore Category</h2>
+
+        <button class="close-btn" onclick="toggleExplore()">
+            ✕
+        </button>
+    </div>
+
+    <div class="explore-cards">
+
+        <!-- Card 1 -->
+        <div class="explore-card">
+            <img src="images/explore1.png" alt="">
+            <h3>Browse Profiles</h3>
+            <p>1200+ verified profiles</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="explore-card">
+            <img src="images/explore2.png" alt="">
+            <h3>Wedding Page</h3>
+            <p>Make Reservation</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="explore-card">
+            <img src="images/explore3.png" alt="">
+            <h3>All Services</h3>
+            <p>Catering, Stage Decor Etc..</p>
+            <button>More Details</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="explore-card">
+            <img src="images/explore4.png" alt="">
+            <h3>Join Us</h3>
+            <p>Join Us For More</p>
+            <button>More Details</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="faqPopup" class="faq-popup">
+
+    <button class="faq-close" onclick="toggleFaq()">✕</button>
+
+    <h2 class="faq-title">
+        Frequently asked questions
+    </h2>
+
+    <div class="faq-box">
+
+        <div class="faq-item">
+            <span>How Matrimony Works ?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Printing and typesetting industry?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Why do we use it?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>There are many variations of passages?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+        <div class="faq-item">
+            <span>Where can I get some?</span>
+            <button class="faq-toggle">+</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="contactPopup" class="contact-popup">
+
+    <button class="contact-close" onclick="toggleContact()">✕</button>
+
+    <h2 class="contact-title">
+        CONTACT TO US EASY AND FAST
+    </h2>
+
+    <div class="contact-container">
+
+        <!-- Left Image -->
+       <div class="contact-image">
+
+            <img src="images/contact.png"
+                class="flower-img"
+                alt="Flower">
+
+            <img src="images/contact1.png"
+                class="couple-img-contact"
+                alt="Couple">
+
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Mail-Id</label>
+                <input type="email">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel">
+            </div>
+
+            <div class="form-group message-group">
+                <label>Message</label>
+                <textarea></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+            <a href="plans.html" class="menu-item">Plans</a>
+
+            <a href="gallery.html" class="menu-item">Gallery</a>
+
+            <a href="dashboard.html" class="menu-item">Dashboard</a>
+
+            <button class="details-btn" onclick="openRegisterForm()">
+                Register
+            </button>
+
+        </div>
+
+    </section>
+
+<div class="details-page">
+
+    <div class="profile-left">
+
+        <img id="profileImage"src="" alt="">
+
+        <p>
+            <strong>Name :</strong>
+            <span id="profileName"></span>
+        </p>
+
+        <p>
+            <strong>ID :</strong>
+            <span id="profileId"></span>
+        </p>
+
+    </div>
+
+    <div class="profile-right">
+
+        <h2 id="title"></h2>
+
+        <p><strong>Name :</strong> <span id="name"></span></p>
+        <p><strong>DOB :</strong> 05-05-2000</p>
+        <p><strong>Age :</strong> <span id="age"></span></p>
+        <p><strong>Gender :</strong> <span id="gender"></span></p>
+        <p><strong>Address :</strong> 1/3 Church Street Chennai</p>
+        <p><strong>Religion :</strong> Christian</p>
+        <p><strong>Caste :</strong> Nadar</p>
+        <p><strong>Qualification :</strong> B.E(ECE)</p>
+        <p><strong>Work :</strong> Office Chennai</p>
+        <p><strong>Status :</strong> Single</p>
+        <p><strong>Horoscope :</strong> Pisces</p>
+
+        <button class="chat-btn">
+            Chat With Profile
+        </button>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Contact -->
+
+        <div class="footer-col">
+            <h3>Get In Touch</h3>
+
+            <div class="contact-info">
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    123 road, Chennai
+                </p>
+
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    9876543210
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    abcmatrimony@gmail.com
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Resources -->
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Guide</a>
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-col">
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Safety Information</a>
+            <a href="#">Cancellation Options</a>
+        </div>
+
+        <!-- Social -->
+
+        <div class="footer-col">
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+                <img src="images/insta.png" alt="">
+                <img src="images/whatsapp.png" alt="">
+                <img src="images/fb.png" alt="">
+            </div>
+        </div>
+
+        <!-- App Download -->
+
+        <div class="footer-col">
+            <h3>Download Our APP</h3>
+
+            <div class="app-buttons">
+                <img src="images/playstore.png" alt="">
+                <img src="images/app.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</div>
+<script>
+    function toggleExplore() {
+    document
+    .getElementById("exploreSection")
+    .classList.toggle("active");
+}
+
+/*FAQ Popup*/
+function toggleFaq() {
+    document
+    .getElementById("faqPopup")
+    .classList.toggle("active");
+}
+
+/*CONTACT Popup*/
+function toggleContact() {
+    document
+    .getElementById("contactPopup")
+    .classList.toggle("active");
+}
+
+function openProfile() {
+    window.location.href = "profile.html";
+}
+
+function openRegisterForm() {
+    window.location.href = "register.html";
+}
+
+const profiles = {
+
+    1:{
+        name:"Eleanor Pena",
+        id:"ABC12345690",
+        age:"25",
+        gender:"Female",
+        img:"images/person3.png"
+    },
+
+    2:{
+        name:"John Doe",
+        id:"ABC12345691",
+        age:"27",
+        gender:"Male",
+        img:"images/photo1.png"
+    },
+
+    3:{
+        name:"Jane Smith",
+        id:"ABC12345692",
+        age:"24",
+        gender:"Female",
+        img:"images/photo2.png"
+    },
+
+    4:{
+        name:"Bob Johnson",
+        id:"ABC12345693",
+        age:"29",
+        gender:"Male",
+        img:"images/photo3.png"
+    },
+
+    5:{
+        name:"Alice Williams",
+        id:"ABC12345694",
+        age:"26",
+        gender:"Female",
+        img:"images/photo4.jpg"
+    },
+
+    6:{
+        name:"Charlie Brown",
+        id:"ABC12345695",
+        age:"30",
+        gender:"Male",
+        img:"images/photo5.png"
+    }
+
+};
+
+const profileId =
+new URLSearchParams(window.location.search)
+.get("profile");
+
+const profile = profiles[profileId];
+
+if(profile){
+
+    document.getElementById("profileName").innerText =
+    profile.name;
+
+    document.getElementById("profileId").innerText =
+    profile.id;
+
+    document.getElementById("name").innerText =
+    profile.name;
+
+    document.getElementById("age").innerText =
+    profile.age;
+
+    document.getElementById("gender").innerText =
+    profile.gender;
+
+    document.getElementById("profileImage").src =
+    profile.img;
+
+    document.getElementById("title").innerText =
+    "Basic Details About " + profile.name;
+}
+
+</script>
+</body>
+</html>
